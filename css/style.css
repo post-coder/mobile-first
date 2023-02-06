@@ -33,23 +33,23 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    justify-content: center;
+    /* justify-content: space-between; */
 
   }
 
   #uno .col:first-child {
     /* width: calc(100% - 100% / 3 - 14px); */
-    width: calc(100% / 3 * 2 - 14px);
+    width: calc(100% / 3 * 2 - (14px / 3 * 1));
   }
 
   #due .col:first-child {
-    width: calc(100% - 14px);
+    width: calc(100%);
   }
 
 
   #uno .col,
   #due .col {
-    width: calc(100% / 3 - 14px);
+    width: calc(100% / 3 - (14px / 3 * 2 ));
   }
 
   .col {
