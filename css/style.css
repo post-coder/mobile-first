@@ -37,6 +37,12 @@ section {
 
   }
 
+
+  /* formula generale per distribuire il gap corrrettamente tra gli elementi */
+  /* width: calc( 100% / [numero colonne totali] * [colonne che vogliamo occupare] - ([spazio da creare] / [colonne totali] * [spazi vuoti nella riga] )   */
+
+
+
   #uno .col:first-child {
     /* width: calc(100% - 100% / 3 - 14px); */
     width: calc(100% / 3 * 2 - (14px / 3 * 1));
